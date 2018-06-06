@@ -1,0 +1,26 @@
+<?php
+
+namespace DummyNamespace;
+
+use AcDevelopers\EloquentUrlPresenter\EloquentUrlPresenter;
+use NamespacedDummyModel;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends EloquentUrlPresenter
+{
+    /**
+     * DummyClass constructor.
+     *
+     * @param \NamespacedDummyModel $entity
+     */
+    public function __construct(DummyModel $entity)
+    {
+        parent::__construct($entity);
+
+        //
+    }
+}

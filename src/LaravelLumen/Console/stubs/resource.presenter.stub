@@ -1,0 +1,49 @@
+<?php
+
+namespace DummyNamespace;
+
+use AcDevelopers\EloquentUrlPresenter\EloquentUrlPresenter;
+use AcDevelopers\EloquentUrlPresenter\LaravelLumen\HasResources;
+use NamespacedDummyModel;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends EloquentUrlPresenter
+{
+    use HasResources;
+
+    /**
+     * DummyClass constructor.
+     *
+     * @param \NamespacedDummyModel $entity
+     */
+    public function __construct(DummyModel $entity)
+    {
+        parent::__construct($entity);
+
+        //
+    }
+
+    /**
+     * Return the resource name as provided in the web.php/route file.
+     * This should be the first argument provided in the
+     * Route::resource method.
+     *
+     * @return string
+     */
+    public function route()
+    {
+        return '';
+    }
+
+    /**
+     * @return array
+     */
+    protected function parameters()
+    {
+        return [];
+    }
+}
