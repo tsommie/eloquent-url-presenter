@@ -10,24 +10,6 @@ namespace AcDevelopers\EloquentUrlPresenter\LaravelLumen;
 trait HasResources
 {
     /**
-     * Get the index url for this entity
-     *
-     * @return string
-     */
-    public function index()
-    {
-        return route($this->route().'.index');
-    }
-
-    /**
-     * @return string
-     */
-    public function create()
-    {
-        return route($this->route().'.create');
-    }
-
-    /**
      * Get the delete url for this entity
      *
      * @return string
