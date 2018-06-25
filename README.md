@@ -112,7 +112,7 @@ So if in your route method looks like `Route::resource('users', 'UserController'
 And the next is to prepare our model to use our url presenter.
 
 ### 1.2.1. Preparing model to use Url Presenter
-Preparing the model that would use the url presenter is simple,  Just use the LaravelUrlPresentableTrait and then implementing the urlPresenter methord which will return our UserUrlPresenter class
+Preparing the model that would use the url presenter is simple,  Just use the EloquentUrlPresentableTrait and then implementing the urlPresenter methord which will return our UserUrlPresenter class
 
 ```
 /**
